@@ -1,0 +1,89 @@
+
+@font-face {
+  font-family: 'manga';
+  src: url('Fonts/manga-font/Manga-4vx6.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url('Fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+    color: white;
+    background-color: black;
+    background-image: url('./Images/bg.jpg');
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-interpolation-mode: bicubic;
+    background-attachment:fixed;
+}
+
+header, main{
+    max-width: 60%;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    text-size-adjust:auto;
+    letter-spacing: 5px;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'manga';
+    font-size:10vw;
+    font-size-adjust: auto;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+    
+}
+header p{
+    font-family: 'bebas';
+    font-size: 30px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+main{
+    font-weight: 100;
+    padding: 5px;
+    margin: 5px;
+    text-size-adjust: auto;
+    text-align: center;
+    font-family: 'bebas';
+    font-size: 25px;
+    background-color: #101010AA;
+    border-radius: 25px;
+}
+
+main h1{
+    letter-spacing: 5px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+main h2{
+    padding: 5px;
+    letter-spacing: 4px;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+main a{
+    text-decoration:underline;
+    color: white;
+}
