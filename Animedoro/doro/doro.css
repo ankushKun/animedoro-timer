@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'manga';
+  src: url('../Fonts/manga-font/Manga-4vx6.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url('../Fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html,body{
+    color: white;
+    background-color: #01010100;
+    background-image: url('../Images/bg.jpg');
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-interpolation-mode: bicubic;
+    background-attachment:fixed;
+    /*background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(252,70,107,1) 100%);
+    */
+
+}
+
+header, main{
+    max-width: 60%;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-weight: lighter;
+    color:white;
+    text-size-adjust:auto;
+    letter-spacing: 5px;
+}
+
+header h1{
+    text-align: center;
+    font-family: 'manga';
+    font-size:10vw;
+    font-size-adjust: auto;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    
+}
+
+main{
+  color: black;
+  text-align: center;
+  font-family: 'bebas';
+}
+
+main .advanced{
+  text-align: left;
+  align-self: left;
+}
+
+main .settings{
+  padding: 15px;
+  padding-left: 20px;
+  color: white;
+  background-color: #101010AA;
+  border-radius: 25px;
+}
+
+footer{
+  width: 100%;
+  position: absolute;
+  background-color: #101010AA;
+  bottom: -5px;
+  color: white;
+  text-align: left;
+  font-family: 'bebas';
+  letter-spacing: 0.2vw;
+  font-size: 2vh; 
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: white;
+}
+
+.counter{
+  color: white;
+  background: #101010AA;
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 3px;
+  font-family: 'bebas';
+  font-size: 11vw;
+  border-radius: 20px;
+  
+}
+
+.next-event-info{
+  font-size: 30px;
+  padding: 5px;
+  color: white;
+  background-color: #101010AA;
+  border-radius: 25px;
+  letter-spacing: 3px;
+}

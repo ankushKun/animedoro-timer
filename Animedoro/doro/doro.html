@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animedoro</title>
+    <link rel="stylesheet" href="./button.css">
+    <link rel="stylesheet" href="./doro.css">
+    <audio id="notificationSound">
+        <source src="./tone.mp3" type="audio/mpeg">
+    </audio>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h1>AnimeDoro</h1>
+            <nav>
+                <a href="../index.html">
+                    <button class="glow-on-hover" type="button" onclick="">
+                        <h2>HOME</h2>
+                    </button>
+                </a>
+                <a href="./doro.html">
+                    <button class="glow-on-hover" type="button" onclick="">
+                        <h2>TIMER</h2>
+                    </button>
+                </a>
+            </nav>
+        </header>
+        <br>
+        <main>
+
+            <div class="counter">
+                <span class="minutes">40</span>
+                :
+                <span class="seconds">00</span>
+            </div>
+            <br>
+            <h3 class="next-event-info">...</h3>
+            <button class="glow-on-hover" id="start-button" type="button" onclick="">
+                <h2>START</h2>
+            </button>
+            <button class="glow-on-hover" id="plus5" type="button" onclick="">
+                <h2>+5</h2>
+            </button>
+
+
+        </main>
+        <footer>
+            <details>
+
+                <summary>How it works?</summary>
+                <center>
+                    A 40 minute timer starts and it notifies you when the time is over <br>
+                    You can add extra 5 minutes each time the timer ends <br>
+                    After the set time, you are free to watch anime for 20 minutes <br>
+                    It notifies you again in 20 minutes to stop watching <br>
+                    You can start time timer again if you wish to continue studying or working
+                </center>
+            </details>
+
+        </footer>
+    </center>
+    <script src="./doro.js"></script>
+</body>
+
+</html>
