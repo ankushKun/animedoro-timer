@@ -1,0 +1,70 @@
+ /* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 200px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #101010AA; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding: 1px;
+  padding-top: 25px;
+  margin: 0px;
+}
+
+.sidenav details a{
+    margin: 15px;
+    color: white;
+    text-decoration: underline;
+}
+.sidenav details a:hover{
+  color: #BBBBBB;
+}
+
+
+
+/* Style page content */
+main,header,footer {
+  margin-left: 200px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where width is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 15px;}
+} 
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 15px;
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.sidenav .closebtn:hover{
+  color: #AAAAAA;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #101010AA;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #101010BB;
+}
+
+.sidenav details{
+  padding: 10px;
+}

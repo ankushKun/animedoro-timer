@@ -1,6 +1,6 @@
 # Animedoro Timer ⏱
 <div align="center">
-    <a href="https://ankushkun.github.io/projects/animedoro-timer/Animedoro/index.html">
+    <a href="https://ankushKun.github.io/projects/animedoro-timer/Animedoro.html">
         <img src="./Animedoro/Images/icon.png" width="30%">
     </a>
 </div>
@@ -16,7 +16,7 @@ and continue the cycle.\
 ***For more info watch this video by [Josh Chen](https://www.youtube.com/watch?v=bUjGZJIgse0)***\
 productivity : 📈
 
-## Use the **[animedoro timer](https://ankushkun.github.io/projects/animedoro-timer/Animedoro/index.html)** 😄
+## Use the **[animedoro timer](https://ankushKun.github.io/projects/animedoro-timer/Animedoro.html)** 😄
 
 ## Screenshots
 
