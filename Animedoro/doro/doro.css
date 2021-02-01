@@ -30,7 +30,7 @@ html,body{
 }
 
 header, main{
-    max-width: 60%;
+    max-width: 70%;
     padding: 5px;
     margin: 5px;
     text-align: center;
@@ -69,10 +69,11 @@ main .settings{
   border-radius: 25px;
 }
 
-footer{
-  width: 100%;
-  position: absolute;
-  background-color: #101010AA;
+details{
+  /*margin-left: 200px; /* Same as the width of the sidebar */
+  /*left: 10px;*/
+  margin: 1px;
+  background-color: #10101000;
   bottom: -5px;
   color: white;
   text-align: left;
@@ -104,3 +105,5 @@ footer{
   border-radius: 25px;
   letter-spacing: 3px;
 }
+
+
