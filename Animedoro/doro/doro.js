@@ -84,6 +84,10 @@ const updateEventDetails = function (timestamp) {
 }
 
 function startClicked() {
+    window.onbeforeunload = function (e) {
+        return "Sure you want to leave?";
+    };
+
     checkPerms();
     startCountdown(timeMins, 0);
     updateEventDetails(endTime);
