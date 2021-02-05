@@ -1,8 +1,10 @@
 
+const width = "250px";
+
 function openNav() {
-    document.querySelector(".sidenav").style.width = "200px";
-    document.querySelector("main").style.marginLeft = "200px";
-    document.querySelector("header").style.marginLeft = "200px";
+    document.querySelector(".sidenav").style.width = width;
+    document.querySelector("main").style.marginLeft = width;
+    document.querySelector("header").style.marginLeft = width;
     document.querySelector(".openbtn").style.visibility = "hidden";
 }
 
