@@ -16,7 +16,7 @@ and continue the cycle.\
 ***For more info watch this video by [Josh Chen](https://www.youtube.com/watch?v=bUjGZJIgse0)***\
 productivity : 📈
 
-## Use the **[animedoro timer](https://ankushKun.github.io/projects/animedoro-timer/Animedoro.html)** 😄
+## Use the **[animedoro timer](https://ankushKun.github.io/projects/animedoro-timer/Animedoro/index.html)** 😄
 
 ## Screenshots
 
