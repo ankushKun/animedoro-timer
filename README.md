@@ -23,8 +23,13 @@ productivity : 📈
 ![homepage](./Animedoro/Images/homepage.png)
 ![timer](./Animedoro/Images/timer.png)
 ![notification](./Animedoro/Images/notif.PNG)
+![notification on mac](./Animedoro/Images/notif_mac.png)
+
 
 ## TODO
 
-- [ ] A settings section to set custom timers
-- [ ] A browser extension?
+- [ ] Settings section to set custom timers
+- [ ] Total time studied/watched anime counter
+- [ ] Some login thing for storing timer data
+- [ ] Global leaderboards based on study time
+- [ ] Browser extension?
