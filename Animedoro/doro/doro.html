@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./button.css">
     <link rel="stylesheet" href="./doro.css">
     <link rel="stylesheet" href="../sidebar.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <audio id="notificationSound">
         <source src="./tone.mp3" type="audio/mpeg">
     </audio>
@@ -99,11 +100,22 @@
             </div>
             <br>
             <h3 class="next-event-info">...</h3>
-            <button class="glow-on-hover" id="start-button" type="button" onclick="">
+            <br>
+            <h3 class="study-session-counter">0 Study sessions</h3>
+            <h3 class="anime-session-counter">0 Anime sessions</h3>
+            <br>
+            <br>
+            <button class="glow-on-hover" id="start-button" type="button" onclick="startClicked()">
                 <h2>START</h2>
             </button>
-            <button class="glow-on-hover" id="plus5" type="button" onclick="">
+            <button class="glow-on-hover" id="plus5" type="button" onclick="add5mins()">
                 <h2>+5</h2>
+            </button>
+            <button class="glow-on-hover" id="pause" type="button" onclick="pauseCountdown()">
+                <i class="material-icons">pause</i>
+            </button>
+            <button class="glow-on-hover" id="play" type="button" onclick="resumeCountdown()">
+                <i class="material-icons">play_arrow</i>
             </button>
 
 

@@ -102,8 +102,30 @@ details{
   padding: 5px;
   color: white;
   background-color: #101010AA;
-  border-radius: 25px;
+  border-radius: 20px;
   letter-spacing: 3px;
 }
 
+.study-session-counter{
+  width: fit-content;
+  display: inline;
+  font-size: 30px;
+  padding: 5px;
+  padding-inline: 10px;
+  color: white;
+  background-color: #101010AA;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
 
+.anime-session-counter{
+  width: fit-content;
+  display: inline;
+  font-size: 30px;
+  padding: 5px;
+  padding-inline: 10px;
+  color: white;
+  background-color: #101010AA;
+  border-radius: 20px;
+  letter-spacing: 3px;
+}
