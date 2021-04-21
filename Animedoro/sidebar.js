@@ -16,4 +16,4 @@ function closeNav() {
     document.querySelector(".openbtn").style.visibility = "visible";
 }
 
-openNav();
+closeNav();
