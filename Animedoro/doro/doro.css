@@ -108,10 +108,10 @@ details{
 
 .study-session-counter{
   width: fit-content;
-  display: inline;
+  display: inline-block;
   font-size: 30px;
-  padding: 5px;
-  padding-inline: 10px;
+  padding: 6px;
+  margin:2px;
   color: white;
   background-color: #101010AA;
   border-radius: 20px;
@@ -120,10 +120,10 @@ details{
 
 .anime-session-counter{
   width: fit-content;
-  display: inline;
+  display: inline-block;
   font-size: 30px;
-  padding: 5px;
-  padding-inline: 10px;
+  padding: 6px;
+  margin: 2px;
   color: white;
   background-color: #101010AA;
   border-radius: 20px;

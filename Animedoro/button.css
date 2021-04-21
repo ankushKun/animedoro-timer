@@ -7,7 +7,7 @@ nav a{
     text-decoration: none;
 }
 
-.glow-on-hover {
+.button-black {
     padding: 10px;
     margin: 10px;
     border: none;
@@ -23,9 +23,9 @@ nav a{
     font-size: 25px;
 }
 
-.glow-on-hover:before {
+.button-black:before {
     content: '';
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);  */
     position: absolute;
     top: -2px;
     left:-2px;
@@ -40,19 +40,19 @@ nav a{
     border-radius: 10px;
 }
 
-.glow-on-hover:active {
+.button-black:active {
     color: #000
 }
 
-.glow-on-hover:active:after {
+.button-black:active:after {
     background: transparent;
 }
 
-.glow-on-hover:hover:before {
+.button-black:hover:before {
     opacity: 1;
 }
 
-.glow-on-hover:after {
+.button-black:after {
     z-index: -1;
     content: '';
     position: absolute;
