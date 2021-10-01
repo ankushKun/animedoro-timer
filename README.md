@@ -17,7 +17,9 @@ and continue the cycle\
 productivity : 📈\
 You can also set custom time limits if you want.
 
-## Use the **animedoro timer** 😄
+Use Animedoro here 👇 😊
+<p> <a href="https://ankushkun.github.io/animedoro">
+    <img src="https://user-images.githubusercontent.com/81548305/135667871-a763dc59-5d04-4399-8ce7-24e73c462d62.png" width="400" height="132"> </a> </p>
 
 ## Screenshots
 
