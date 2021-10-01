@@ -35,7 +35,7 @@ aniInp.value = localStorage.getItem("animeTime")
   : 20;
 workInp.value = localStorage.getItem("workTime")
   ? localStorage.getItem("workTime")
-  : 60;
+  : 40;
 
 let animeSessions = localStorage.getItem("animeSessions")
   ? localStorage.getItem("animeSessions")
