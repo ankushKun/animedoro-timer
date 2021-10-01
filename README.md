@@ -10,14 +10,14 @@
 
 It's like **pomodoro**, but with **Anime**
 Instead of regular 25+5 pomodoro technique,
-Animedoro uses 40+20 timers
 you work at your own pace for 40 to 60 minutes
 then watch an episode of anime for 20 minutes
-and continue the cycle.\
+and continue the cycle\
 **_For more info watch this video by [Josh Chen](https://www.youtube.com/watch?v=bUjGZJIgse0)_**\
-productivity : 📈
+productivity : 📈\
+You can also set custom time limits if you want.
 
-## Use the **[animedoro timer](https://ankushKun.github.io/projects/animedoro-timer/Animedoro/index.html)** 😄
+## Use the **animedoro timer** 😄
 
 ## Screenshots
 
@@ -28,8 +28,10 @@ productivity : 📈
 
 ## TODO
 
-- [ ] Settings section to set custom timers
+- [x] Custom time
 - [x] Total time studied/watched anime counter
 - [ ] Some login thing for storing timer data
 - [ ] Global leaderboards based on study time
 - [ ] Browser extension?
+
+#### P.S. : You can also set anime time more than work time 😉

@@ -70,10 +70,11 @@
                 <details>
                     <summary style="cursor:pointer">How it works?</summary>
                     <center>
-                        A 40 minute timer starts and it notifies you when the time is over <br>
-                        You can add extra 5 minutes each time the timer ends <br>
-                        After the set time, you are free to watch anime for 20 minutes <br>
-                        It notifies you again in 20 minutes to stop watching <br>
+                        You can set work and anime time<br>
+                        A timer starts and it notifies you when the time is over <br>
+                        You can add extra 5 minutes whenever you want <br>
+                        After the work time, you are free to watch anime<br>
+                        It notifies you again after set time to stop watching <br>
                         You can start time timer again if you wish to continue studying or working
                     </center>
                 </details>
@@ -93,10 +94,16 @@
         </header>
         <br>
         <main>
-            <div class="counter">
-                <span class="minutes">40</span>
-                :
-                <span class="seconds">00</span>
+            <div class="counter">‍‍
+                <span class="before-start">
+                    Work Minutes : <input type="number" id="work-input" class="before-start" onchange="inpchk(workInp)"  oninput="inpvalid(workInp)"><br>
+                    Anime Minutes : <input type="number" id="anime-input" class="before-start" onchange="inpchk(aniInp)"  oninput="inpvalid(aniInp)">
+                </span>
+                <span class="aft-start">
+                    <span class="minutes">40</span>
+                    :‍‍‍‍‍
+                    <span class="seconds">00</span>
+                </span>
             </div>
             <br>
             <h3 class="next-event-info">...</h3>
