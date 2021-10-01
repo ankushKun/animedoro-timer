@@ -92,8 +92,8 @@ details {
   padding-bottom: 10px;
   margin: 3px;
   font-family: "bebas";
-  font-size: 11vw;
-  border-radius: 20px;
+  font-size: 8vw;
+  border-radius: 10px;
 }
 
 .next-event-info {
@@ -101,7 +101,7 @@ details {
   padding: 5px;
   color: white;
   background-color: #101010aa;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 3px;
 }
 
@@ -113,7 +113,7 @@ details {
   margin: 2px;
   color: white;
   background-color: #101010aa;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 3px;
 }
 
@@ -125,7 +125,7 @@ details {
   margin: 2px;
   color: white;
   background-color: #101010aa;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 3px;
 }
 
@@ -136,7 +136,7 @@ details {
   margin: 2px;
   color: white;
   background-color: #101010aa;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 3px;
 }
 
@@ -147,6 +147,32 @@ details {
   margin: 2px;
   color: white;
   background-color: #101010aa;
-  border-radius: 20px;
+  border-radius: 10px;
   letter-spacing: 3px;
+}
+
+.aft-start{
+  display: none;
+  font-size: 13vw;
+}
+
+.before-start{
+  font-size:7vw;
+  background: none;
+  line-height: 1px;
+  border-radius: 10px;
+  color: white;
+  font-family: "bebas";
+}
+
+input{
+  width: 1.5em;
+  height : 1em;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

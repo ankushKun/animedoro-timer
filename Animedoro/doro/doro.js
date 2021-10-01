@@ -1,11 +1,12 @@
-var interval;
+var interval, animeTime, workTime, timeMins;
 let endTime = Date.now() + 40 * 60 * 1000;
 let watchingAnime = false;
-let animeTime = 20;
-let workTime = 40;
-let timeMins = workTime;
 let paused = false;
 
+const workInp = document.querySelector("#work-input");
+const aniInp = document.querySelector("#anime-input");
+const beforeStart = document.querySelector(".before-start");
+const aftStart = document.querySelector(".aft-start");
 const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
@@ -29,6 +30,13 @@ startButton.addEventListener("click", function () {
   this.blur();
 });
 // get values and initialize if non existent
+aniInp.value = localStorage.getItem("animeTime")
+  ? localStorage.getItem("animeTime")
+  : 20;
+workInp.value = localStorage.getItem("workTime")
+  ? localStorage.getItem("workTime")
+  : 40;
+
 let animeSessions = localStorage.getItem("animeSessions")
   ? localStorage.getItem("animeSessions")
   : 0;
@@ -80,6 +88,16 @@ function addStudySession() {
   );
   updateSessionCounters();
 }
+
+function updateTime(){
+  animeTime = Number(aniInp.value);
+  workTime = Number(workInp.value);
+  localStorage.setItem("animeTime", animeTime);
+  localStorage.setItem("workTime", workTime);
+  timeMins = workTime;
+
+}
+updateTime();
 
 const startCountdown = function (mins, secs) {
   const now = Date.now();
@@ -167,7 +185,9 @@ function startClicked() {
   checkPerms();
   startCountdown(timeMins, 0);
   updateEventDetails(endTime);
-  startButton.textContent = "RESTART";
+  startButton.textContent = "RESET";
+  aftStart.style.display = "inline";
+  beforeStart.style.display = "none";
 }
 
 function pauseCountdown() {
@@ -209,4 +229,24 @@ const notify = function (heading, desc) {
   beep.play();
 };
 
+function inpvalid(inp){
+  val = inp.value;
+  if(val.length > 3){
+    inp.value = val.slice(-3);
+  }
+}
+
+function inpchk(inp){
+  if(Number(val) > 180){
+    inp.value = 180;
+  }
+
+  if(Number(val) < 0){
+    inp.value = 0;
+  }
+
+  updateTime();
+}
+
 checkPerms();
+
