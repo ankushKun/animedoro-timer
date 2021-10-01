@@ -1,9 +1,6 @@
-var interval;
+var interval, animeTime, workTime, timeMins;
 let endTime = Date.now() + 40 * 60 * 1000;
 let watchingAnime = false;
-// let animeTime = 0;
-// let workTime = 0;
-// let timeMins = workTime;
 let paused = false;
 
 const workInp = document.querySelector("#work-input");
@@ -33,12 +30,12 @@ startButton.addEventListener("click", function () {
   this.blur();
 });
 // get values and initialize if non existent
-let animeTime = localStorage.getItem("animeTime")
+aniInp.value = localStorage.getItem("animeTime")
   ? localStorage.getItem("animeTime")
   : 20;
-let workTime = localStorage.getItem("workTime")
+workInp.value = localStorage.getItem("workTime")
   ? localStorage.getItem("workTime")
-  : 40;
+  : 60;
 
 let animeSessions = localStorage.getItem("animeSessions")
   ? localStorage.getItem("animeSessions")
@@ -58,8 +55,6 @@ localStorage.setItem("animeSessions", animeSessions);
 localStorage.setItem("studySessions", studySessions);
 localStorage.setItem("animeSessionCounter", animeHours);
 localStorage.setItem("studySessionCounter", studyHours);
-
-let timeMins = workTime;
 
 function updateSessionCounters() {
   animeSessions = parseInt(localStorage.getItem("animeSessions"), 10);
@@ -93,6 +88,16 @@ function addStudySession() {
   );
   updateSessionCounters();
 }
+
+function updateTime(){
+  animeTime = Number(aniInp.value);
+  workTime = Number(workInp.value);
+  localStorage.setItem("animeTime", animeTime);
+  localStorage.setItem("workTime", workTime);
+  timeMins = workTime;
+
+}
+updateTime();
 
 const startCountdown = function (mins, secs) {
   const now = Date.now();
@@ -239,6 +244,8 @@ function inpchk(inp){
   if(Number(val) < 0){
     inp.value = 0;
   }
+
+  updateTime();
 }
 
 checkPerms();
