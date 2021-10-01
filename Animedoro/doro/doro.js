@@ -6,6 +6,8 @@ let watchingAnime = false;
 // let timeMins = workTime;
 let paused = false;
 
+const workInp = document.querySelector("#work-input");
+const aniInp = document.querySelector("#anime-input");
 const beforeStart = document.querySelector(".before-start");
 const aftStart = document.querySelector(".aft-start");
 const minsCounter = document.querySelector(".minutes");
@@ -222,4 +224,22 @@ const notify = function (heading, desc) {
   beep.play();
 };
 
+function inpvalid(inp){
+  val = inp.value;
+  if(val.length > 3){
+    inp.value = val.slice(-3);
+  }
+}
+
+function inpchk(inp){
+  if(Number(val) > 180){
+    inp.value = 180;
+  }
+
+  if(Number(val) < 0){
+    inp.value = 0;
+  }
+}
+
 checkPerms();
+
