@@ -1,11 +1,13 @@
 var interval;
 let endTime = Date.now() + 40 * 60 * 1000;
 let watchingAnime = false;
-let animeTime = 20;
-let workTime = 40;
-let timeMins = workTime;
+// let animeTime = 0;
+// let workTime = 0;
+// let timeMins = workTime;
 let paused = false;
 
+const beforeStart = document.querySelector(".before-start");
+const aftStart = document.querySelector(".aft-start");
 const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
@@ -29,6 +31,13 @@ startButton.addEventListener("click", function () {
   this.blur();
 });
 // get values and initialize if non existent
+let animeTime = localStorage.getItem("animeTime")
+  ? localStorage.getItem("animeTime")
+  : 20;
+let workTime = localStorage.getItem("workTime")
+  ? localStorage.getItem("workTime")
+  : 40;
+
 let animeSessions = localStorage.getItem("animeSessions")
   ? localStorage.getItem("animeSessions")
   : 0;
@@ -47,6 +56,8 @@ localStorage.setItem("animeSessions", animeSessions);
 localStorage.setItem("studySessions", studySessions);
 localStorage.setItem("animeSessionCounter", animeHours);
 localStorage.setItem("studySessionCounter", studyHours);
+
+let timeMins = workTime;
 
 function updateSessionCounters() {
   animeSessions = parseInt(localStorage.getItem("animeSessions"), 10);
@@ -167,7 +178,9 @@ function startClicked() {
   checkPerms();
   startCountdown(timeMins, 0);
   updateEventDetails(endTime);
-  startButton.textContent = "RESTART";
+  startButton.textContent = "RESET";
+  aftStart.style.display = "inline";
+  beforeStart.style.display = "none";
 }
 
 function pauseCountdown() {
