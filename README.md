@@ -1,10 +1,8 @@
 # Animedoro Timer ⏱
 
-<div align="center">
-    <a href="https://ankushKun.github.io/projects/animedoro-timer/Animedoro.html">
-        <img src="./Animedoro/Images/icon.png" width="30%">
-    </a>
-</div>
+<a href="https://ankushKun.github.io/animedoro">
+        <img src="./Animedoro/Images/icon.png" width="30%" align="right">
+</a>
 
 ## What is AnimeDoro?
 
@@ -17,8 +15,8 @@ and continue the cycle\
 productivity : 📈\
 You can also set custom time limits if you want.
 
-## Use the **animedoro timer** 😄
-
+Use Animedoro [here](https://ankushKun.github.io) 👈 😊   
+    
 ## Screenshots
 
 ![homepage](./Animedoro/Images/homepage.png)
