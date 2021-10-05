@@ -106,7 +106,6 @@ const startCountdown = function (mins, secs) {
   plus5.style.visibility = "visible";
   pause.style.visibility = "visible";
   play.style.visibility = "hidden";
-  paused = false;
   interval = setInterval(() => {
     if (paused) {
       endTime += 100; // keeps adding 100ms because interval is called every 100ms
@@ -182,10 +181,17 @@ function startClicked() {
     return "Sure you want to leave?";
   };
 
+  if(startButton.textContent==='RESET'){
+    paused = true;
+    startButton.textContent='START';
+  }else{
+    paused = false;
+    startButton.textContent='RESET';
+  }
+
   checkPerms();
   startCountdown(timeMins, 0);
   updateEventDetails(endTime);
-  startButton.textContent = "RESET";
   aftStart.style.display = "inline";
   beforeStart.style.display = "none";
 }
