@@ -10,6 +10,7 @@ const aftStart = document.querySelector(".aft-start");
 const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
+const resetButton = document.querySelector('#reset-button');
 const plus5 = document.querySelector("#plus5");
 const pause = document.querySelector("#pause");
 const play = document.querySelector("#play");
@@ -22,6 +23,7 @@ const studyHoursCounter = document.querySelector(".total-count-study");
 const beep = document.querySelector("#notificationSound");
 
 startButton.textContent = "START";
+resetButton.style.visibility = "hidden";
 plus5.textContent = "+5";
 plus5.style.visibility = "hidden";
 pause.style.visibility = "hidden";
@@ -181,12 +183,13 @@ function startClicked() {
     return "Sure you want to leave?";
   };
 
-  if(startButton.textContent==='RESET'){
+  if(startButton.textContent==='RESTART'){
     paused = true;
     startButton.textContent='START';
+    resetButton.style.visibility = 'visible';
   }else{
     paused = false;
-    startButton.textContent='RESET';
+    startButton.textContent='RESTART';
   }
 
   checkPerms();
@@ -256,3 +259,10 @@ function inpchk(inp){
 
 checkPerms();
 
+
+function reset(){
+  aftStart.style.display = 'none';
+  beforeStart.style.display = 'inline';
+  startButton.textContent = 'START';
+  resetButton.style.visibility = 'hidden';
+}
