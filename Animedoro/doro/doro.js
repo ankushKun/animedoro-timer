@@ -10,6 +10,7 @@ const aftStart = document.querySelector(".aft-start");
 const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
+const resetButton = document.querySelector('#reset-button');
 const plus5 = document.querySelector("#plus5");
 const pause = document.querySelector("#pause");
 const play = document.querySelector("#play");
@@ -22,6 +23,7 @@ const studyHoursCounter = document.querySelector(".total-count-study");
 const beep = document.querySelector("#notificationSound");
 
 startButton.textContent = "START";
+resetButton.style.visibility = "hidden";
 plus5.textContent = "+5";
 plus5.style.visibility = "hidden";
 pause.style.visibility = "hidden";
@@ -106,7 +108,6 @@ const startCountdown = function (mins, secs) {
   plus5.style.visibility = "visible";
   pause.style.visibility = "visible";
   play.style.visibility = "hidden";
-  paused = false;
   interval = setInterval(() => {
     if (paused) {
       endTime += 100; // keeps adding 100ms because interval is called every 100ms
@@ -182,10 +183,18 @@ function startClicked() {
     return "Sure you want to leave?";
   };
 
+  if(startButton.textContent==='RESTART'){
+    paused = true;
+    startButton.textContent='START';
+    resetButton.style.visibility = 'visible';
+  }else{
+    paused = false;
+    startButton.textContent='RESTART';
+  }
+
   checkPerms();
   startCountdown(timeMins, 0);
   updateEventDetails(endTime);
-  startButton.textContent = "RESET";
   aftStart.style.display = "inline";
   beforeStart.style.display = "none";
 }
@@ -250,3 +259,10 @@ function inpchk(inp){
 
 checkPerms();
 
+
+function reset(){
+  aftStart.style.display = 'none';
+  beforeStart.style.display = 'inline';
+  startButton.textContent = 'START';
+  resetButton.style.visibility = 'hidden';
+}
