@@ -11,6 +11,7 @@ const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
 const resetButton = document.querySelector('#reset-button');
+const finishButton = document.querySelector("#finish-button");
 const plus5 = document.querySelector("#plus5");
 const pause = document.querySelector("#pause");
 const play = document.querySelector("#play");
@@ -24,6 +25,8 @@ const beep = document.querySelector("#notificationSound");
 
 startButton.textContent = "START";
 resetButton.style.visibility = "hidden";
+finishButton.style.visibility = "hidden";
+finishButton.textContent = "FINISH";
 plus5.textContent = "+5";
 plus5.style.visibility = "hidden";
 pause.style.visibility = "hidden";
@@ -107,6 +110,7 @@ const startCountdown = function (mins, secs) {
   displayTime(Math.round((endTime - Date.now()) / 1000));
   plus5.style.visibility = "visible";
   pause.style.visibility = "visible";
+  finishButton.style.visibility = "visible";
   play.style.visibility = "hidden";
   interval = setInterval(() => {
     if (paused) {
@@ -122,6 +126,7 @@ const startCountdown = function (mins, secs) {
         nextEventInfo.textContent = "Dont you dare click on next Episode!";
         startButton.textContent = "START";
         plus5.style.visibility = "hidden";
+        finishButton.style.visibility = "hidden";
         timeMins = workTime;
         watchingAnime = false;
         paused = true;
@@ -137,6 +142,7 @@ const startCountdown = function (mins, secs) {
         timeMins = animeTime;
         nextEventInfo.textContent = "You can watch Anime now";
         plus5.style.visibility = "hidden";
+        finishButton.style.visibility = "hidden";
         startButton.textContent = "START";
         watchingAnime = true;
         paused = true;
@@ -165,6 +171,12 @@ const add5mins = function () {
   updateEventDetails(endTime);
 };
 
+const finishCountdown = function () {
+  endTime = 1000;
+  //displayTime(Date.now() - endTime);
+  updateEventDetails(endTime);
+};
+
 const updateEventDetails = function (timestamp) {
   let dateObj = new Date(timestamp);
   let hours = dateObj.getHours();
@@ -185,11 +197,13 @@ function startClicked() {
 
   if(startButton.textContent==='RESTART'){
     paused = true;
-    startButton.textContent='START';
+    startButton.textContent='START'
     resetButton.style.visibility = 'visible';
+    startButton.style.visibility = "hidden";
   }else{
     paused = false;
-    startButton.textContent='RESTART';
+    startButton.style.visibility = "visible";
+    startButton.textContent='RESET';
   }
 
   checkPerms();
@@ -210,6 +224,7 @@ function resumeCountdown() {
   pause.style.visibility = "visible";
   play.style.visibility = "hidden";
 }
+
 
 //startCountdown(1, 5);
 //add5mins();
