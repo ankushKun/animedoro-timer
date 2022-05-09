@@ -1,6 +1,6 @@
 # Animedoro Timer ⏱
 
-<a href="https://ankushKun.github.io/animedoro">
+<a href="https://ankushkun.github.io/animedoro-timer/Animedoro/">
         <img src="./Animedoro/Images/icon.png" width="30%" align="right">
 </a>
 
@@ -15,7 +15,7 @@ and continue the cycle\
 productivity : 📈\
 You can also set custom time limits if you want.
 
-Use Animedoro [here](https://ankushKun.github.io) 👈 😊   
+Use Animedoro [here](https://ankushkun.github.io/animedoro-timer/Animedoro/) 👈 😊   
     
 ## Screenshots
 
