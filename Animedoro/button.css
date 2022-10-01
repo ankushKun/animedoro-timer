@@ -6,7 +6,9 @@
 nav a{
     text-decoration: none;
 }
-
+.hide-btn{
+    visibility: hidden;
+}
 .button-black {
     padding: 10px;
     margin: 10px;
@@ -56,6 +58,7 @@ nav a{
     z-index: -1;
     content: '';
     position: absolute;
+    text-align: center;
     width: 100%;
     height: 100%;
     background: #111;

@@ -4,13 +4,14 @@ let watchingAnime = false;
 let paused = false;
 
 const workInp = document.querySelector("#work-input");
+const pbtn = document.querySelector("#pbtn");
 const aniInp = document.querySelector("#anime-input");
 const beforeStart = document.querySelector(".before-start");
 const aftStart = document.querySelector(".aft-start");
 const minsCounter = document.querySelector(".minutes");
 const secsCounter = document.querySelector(".seconds");
 const startButton = document.querySelector("#start-button");
-const resetButton = document.querySelector('#reset-button');
+const resetButton = document.querySelector("#reset-button");
 const finishButton = document.querySelector("#finish-button");
 const plus5 = document.querySelector("#plus5");
 const pause = document.querySelector("#pause");
@@ -94,13 +95,12 @@ function addStudySession() {
   updateSessionCounters();
 }
 
-function updateTime(){
+function updateTime() {
   animeTime = Number(aniInp.value);
   workTime = Number(workInp.value);
   localStorage.setItem("animeTime", animeTime);
   localStorage.setItem("workTime", workTime);
   timeMins = workTime;
-
 }
 updateTime();
 
@@ -195,15 +195,15 @@ function startClicked() {
     return "Sure you want to leave?";
   };
 
-  if(startButton.textContent==='RESTART'){
+  if (startButton.textContent === "RESTART") {
     paused = true;
-    startButton.textContent='START'
-    resetButton.style.visibility = 'visible';
+    startButton.textContent = "START";
+    resetButton.style.visibility = "visible";
     startButton.style.visibility = "hidden";
-  }else{
+  } else {
     paused = false;
     startButton.style.visibility = "visible";
-    startButton.textContent='RESET';
+    startButton.textContent = "RESET";
   }
 
   checkPerms();
@@ -224,7 +224,6 @@ function resumeCountdown() {
   pause.style.visibility = "visible";
   play.style.visibility = "hidden";
 }
-
 
 //startCountdown(1, 5);
 //add5mins();
@@ -253,19 +252,19 @@ const notify = function (heading, desc) {
   beep.play();
 };
 
-function inpvalid(inp){
+function inpvalid(inp) {
   val = inp.value;
-  if(val.length > 3){
+  if (val.length > 3) {
     inp.value = val.slice(-3);
   }
 }
 
-function inpchk(inp){
-  if(Number(val) > 180){
+function inpchk(inp) {
+  if (Number(val) > 180) {
     inp.value = 180;
   }
 
-  if(Number(val) < 0){
+  if (Number(val) < 0) {
     inp.value = 0;
   }
 
@@ -274,10 +273,9 @@ function inpchk(inp){
 
 checkPerms();
 
-
-function reset(){
-  aftStart.style.display = 'none';
-  beforeStart.style.display = 'inline';
-  startButton.textContent = 'START';
-  resetButton.style.visibility = 'hidden';
+function reset() {
+  aftStart.style.display = "none";
+  beforeStart.style.display = "inline";
+  startButton.textContent = "START";
+  resetButton.style.visibility = "hidden";
 }
