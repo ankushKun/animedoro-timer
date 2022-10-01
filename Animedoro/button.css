@@ -9,7 +9,7 @@ nav a{
 
 .button-black {
     padding: 10px;
-    margin: 10px;
+    margin-block: 10px;
     border: none;
     outline: none;
     color: #fff;
