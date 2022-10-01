@@ -108,10 +108,10 @@ const startCountdown = function (mins, secs) {
   const now = Date.now();
   endTime = now + mins * 60 * 1000 + secs * 1000;
   displayTime(Math.round((endTime - Date.now()) / 1000));
-  plus5.style.visibility = "visible";
-  pause.style.visibility = "visible";
-  finishButton.style.visibility = "visible";
-  play.style.visibility = "hidden";
+  plus5.style.display = "inline";
+  pause.style.display = "inline";
+  finishButton.style.display = "inline";
+  play.style.display = "none";
   interval = setInterval(() => {
     if (paused) {
       endTime += 100; // keeps adding 100ms because interval is called every 100ms
@@ -125,8 +125,8 @@ const startCountdown = function (mins, secs) {
         clearInterval(interval);
         nextEventInfo.textContent = "Dont you dare click on next Episode!";
         startButton.textContent = "START";
-        plus5.style.visibility = "hidden";
-        finishButton.style.visibility = "hidden";
+        plus5.style.display = "none";
+        finishButton.style.display = "none";
         timeMins = workTime;
         watchingAnime = false;
         paused = true;
@@ -141,8 +141,8 @@ const startCountdown = function (mins, secs) {
         clearInterval(interval);
         timeMins = animeTime;
         nextEventInfo.textContent = "You can watch Anime now";
-        plus5.style.visibility = "hidden";
-        finishButton.style.visibility = "hidden";
+        plus5.style.display = "none";
+        finishButton.style.display = "none";
         startButton.textContent = "START";
         watchingAnime = true;
         paused = true;
@@ -198,11 +198,11 @@ function startClicked() {
   if(startButton.textContent==='RESTART'){
     paused = true;
     startButton.textContent='START'
-    resetButton.style.visibility = 'visible';
-    startButton.style.visibility = "hidden";
+    resetButton.style.display = 'inline';
+    startButton.style.display = "none";
   }else{
     paused = false;
-    startButton.style.visibility = "visible";
+    startButton.style.display = "inline";
     startButton.textContent='RESET';
   }
 
@@ -215,14 +215,14 @@ function startClicked() {
 
 function pauseCountdown() {
   paused = true;
-  pause.style.visibility = "hidden";
-  play.style.visibility = "visible";
+  pause.style.display = "none";
+  play.style.display = "inline";
 }
 
 function resumeCountdown() {
   paused = false;
-  pause.style.visibility = "visible";
-  play.style.visibility = "hidden";
+  pause.style.display = "inline";
+  play.style.display = "none";
 }
 
 
@@ -279,5 +279,5 @@ function reset(){
   aftStart.style.display = 'none';
   beforeStart.style.display = 'inline';
   startButton.textContent = 'START';
-  resetButton.style.visibility = 'hidden';
+  resetButton.style.display = 'none';
 }
