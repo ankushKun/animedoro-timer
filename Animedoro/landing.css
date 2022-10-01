@@ -87,3 +87,9 @@ main a{
     text-decoration:underline;
     color: white;
 }
+
+@media(max-width: 768px){
+    header, main{
+        max-width: 75%;
+    }
+}
