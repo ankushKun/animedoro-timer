@@ -80,9 +80,9 @@ main h2{
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    
+      
 }
-
+ 
 main a{
     text-decoration:underline;
     color: white;
