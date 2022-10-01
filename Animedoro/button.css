@@ -3,70 +3,87 @@
   src: url('Fonts/manga-font/Manga-4vx6.ttf') format('truetype');
 }
 
-nav a{
-    text-decoration: none;
+nav a {
+  text-decoration: none;
+}
+
+button h2 {
+  transition: all 0.3s ease;
+}
+
+button h2:hover {
+  transform: scale(1.05);
+}
+
+button h2:active {
+  transform: scale(0.95);
 }
 
 .button-black {
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-    font-family: 'manga';
-    font-weight: 100;
-    font-size: 25px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  font-family: 'manga';
+  font-weight: 100;
+  font-size: 25px;
 }
 
 .button-black:before {
-    content: '';
-    /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);  */
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    /*animation: glowing 20s linear infinite;*/
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
-}
-
-.button-black:active {
-    color: #000
-}
-
-.button-black:active:after {
-    background: transparent;
+  content: '';
+  /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);  */
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  /*animation: glowing 20s linear infinite;*/
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .button-black:hover:before {
-    opacity: 1;
+  opacity: 1;
+}
+
+.button-black:active {
+  color: #000;
+}
+
+.button-black:active:after {
+  background: transparent;
 }
 
 .button-black:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
-
