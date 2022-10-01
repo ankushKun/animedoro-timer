@@ -24,13 +24,13 @@ const studyHoursCounter = document.querySelector(".total-count-study");
 const beep = document.querySelector("#notificationSound");
 
 startButton.textContent = "START";
-resetButton.style.visibility = "hidden";
-finishButton.style.visibility = "hidden";
+resetButton.style.display = "none";
+finishButton.style.display = "none";
 finishButton.textContent = "FINISH";
 plus5.textContent = "+5";
-plus5.style.visibility = "hidden";
-pause.style.visibility = "hidden";
-play.style.visibility = "hidden";
+plus5.style.display = "none";
+pause.style.display = "none";
+play.style.display = "none";
 startButton.addEventListener("click", function () {
   this.blur();
 });
