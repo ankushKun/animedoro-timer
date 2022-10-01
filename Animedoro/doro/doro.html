@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Animedoro</title>
-    <link rel="stylesheet" href="../button.css">
-    <link rel="stylesheet" href="./doro.css">
-    <link rel="stylesheet" href="../sidebar.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../button.css" />
+    <link rel="stylesheet" href="./doro.css" />
+    <link rel="stylesheet" href="../sidebar.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="../Images/AD_Logo_2020.svg.png"
+      type="image/x-icon"
+    />
     <audio id="notificationSound">
-        <source src="./tone.mp3" type="audio/mpeg">
+      <source src="./tone.mp3" type="audio/mpeg" />
     </audio>
-</head>
+  </head>
 
-<body>
-    <button class="openbtn" onclick="openNav()" style="position: fixed;top: 0;left: 0;">&gt;</button>
+  <body>
+    <button
+      class="openbtn"
+      onclick="openNav()"
+      style="position: fixed; top: 0; left: 0"
+    >
+      &gt;
+    </button>
     <center>
-        <header>
-            <h1>AnimeDoro</h1>
-            <nav class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&lt;</a>
-                <a href="../index.html">
-                    <button class="button-black" type="button" onclick="">
-                        <h2>HOME</h2>
-                    </button>
-                </a>
-                <a href="./doro.html">
-                    <button class="button-black" type="button" onclick="">
-                        <h2>TIMER</h2>
-                    </button>
-                </a>
+      <header>
+        <h1>AnimeDoro</h1>
+        <nav class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&lt;</a
+          >
+          <a href="../index.html">
+            <button class="button-black" type="button" onclick="">
+              <h2>HOME</h2>
+            </button>
+          </a>
+          <a href="./doro.html">
+            <button class="button-black" type="button" onclick="">
+              <h2>TIMER</h2>
+            </button>
+          </a>
 
+          <details open>
+            <summary style="cursor: pointer">Vibing Material</summary>
+            <details>
+              <summary style="cursor: pointer">Anime Music</summary>
+              <iframe
+                src="https://open.spotify.com/embed/playlist/2hmggPfWXyCOmUtmWzKItS"
+                width="220"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </details>
+            <details>
+              <summary style="cursor: pointer">Anime LOFI</summary>
+              <iframe
+                src="https://open.spotify.com/embed/playlist/0aQltjGqAFjNTVNGjoELKq"
+                width="220"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </details>
+            <details>
+              <summary style="cursor: pointer">Hatsune Miku</summary>
+              <iframe
+                src="https://open.spotify.com/embed/playlist/7ISGo58d10WRhVgfN55d1w"
+                width="220"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </details>
+            <details>
+              <summary style="cursor: pointer">Retro Game Tunes</summary>
+              <iframe
+                src="https://open.spotify.com/embed/playlist/3lc6yNcs0dN6Z8czsrpSZj"
+                width="220"
+                height="300"
+                frameborder="0"
+                allowtransparency="true"
+                allow="encrypted-media"
+              ></iframe>
+            </details>
 
-                <details open>
-                    <summary style="cursor:pointer">
-                        Vibing Material
-                    </summary>
-                    <details>
-                        <summary style="cursor: pointer;">Anime Music</summary>
-                        <iframe src="https://open.spotify.com/embed/playlist/2hmggPfWXyCOmUtmWzKItS" width="220"
-                            height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </details>
-                    <details>
-                        <summary style="cursor: pointer;">Anime LOFI</summary>
-                        <iframe src="https://open.spotify.com/embed/playlist/0aQltjGqAFjNTVNGjoELKq" width="220"
-                            height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </details>
-                    <details>
-                        <summary style="cursor: pointer;">Hatsune Miku</summary>
-                        <iframe src="https://open.spotify.com/embed/playlist/7ISGo58d10WRhVgfN55d1w" width="220"
-                            height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </details>
-                    <details>
-                        <summary style="cursor: pointer;">Retro Game Tunes</summary>
-                        <iframe src="https://open.spotify.com/embed/playlist/3lc6yNcs0dN6Z8czsrpSZj" width="220"
-                            height="300" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </details>
-
-                    <!--<a href="https://open.spotify.com/playlist/0aQltjGqAFjNTVNGjoELKq" target="_blank">Anime
+            <!--<a href="https://open.spotify.com/playlist/0aQltjGqAFjNTVNGjoELKq" target="_blank">Anime
                         Lofi</a><br>
                     <a href="https://open.spotify.com/playlist/0aQltjGqAFjNTVNGjoELKq" target="_blank">Anime
                         Music</a><br>
@@ -66,80 +102,124 @@
                         Miku</a><br>
                     <a href="https://open.spotify.com/playlist/3lc6yNcs0dN6Z8czsrpSZj" target="_blank">Retro Game
                         Tunes</a><br>-->
-                </details>
-                <details>
-                    <summary style="cursor:pointer">How it works?</summary>
-                    <center>
-                        You can set work and anime time<br>
-                        A timer starts and it notifies you when the time is over <br>
-                        You can add extra 5 minutes whenever you want <br>
-                        After the work time, you are free to watch anime<br>
-                        It notifies you again after set time to stop watching <br>
-                        You can start time timer again if you wish to continue studying or working
-                    </center>
-                </details>
-                <a href="https://github.com/ankushKun/animedoro-timer" target="_blank">
-                    <button class="button-black" type="button" onclick="">
-                        <p style="font-size: 15px;">GITHUB REPO</p>
-                    </button>
-                </a>
-                <a href="https://ankushKun.github.io/">
-                    <button class="button-black" type="button" onclick="">
-                        <p style="font-size: 15px;">ANKUSHKUN.GITHUB.IO</p>
-                    </button>
-                </a>
-
-
-            </nav>
-        </header>
-        <br>
-        <main>
-            <div class="counter">‍‍
-                <span class="before-start">
-                    Work Minutes : <input type="number" id="work-input" class="before-start" onchange="inpchk(workInp)"  oninput="inpvalid(workInp)"><br>
-                    Anime Minutes : <input type="number" id="anime-input" class="before-start" onchange="inpchk(aniInp)"  oninput="inpvalid(aniInp)">
-                </span>
-                <span class="aft-start">
-                    <span class="minutes">40</span>
-                    :‍‍‍‍‍
-                    <span class="seconds">00</span>
-                </span>
-            </div>
-            <br>
-            <h3 class="next-event-info">...</h3>
-            <br>
-            <h3 class="study-session-counter">0 Study sessions</h3>
-            <h3 class="anime-session-counter">0 Anime sessions</h3>
-            <br>
-            <br>
-            <h4 class="total-count-study">0 Hours of Study</h4>
-            <h4 class="total-count-anime">0 Hours of Anime</h4>
-            <br>
-            <button class="button-black" id="reset-button" type="button" onclick="reset()">
-                <h4>RESET</h4>
+          </details>
+          <details>
+            <summary style="cursor: pointer">How it works?</summary>
+            <center>
+              You can set work and anime time<br />
+              A timer starts and it notifies you when the time is over <br />
+              You can add extra 5 minutes whenever you want <br />
+              After the work time, you are free to watch anime<br />
+              It notifies you again after set time to stop watching <br />
+              You can start time timer again if you wish to continue studying or
+              working
+            </center>
+          </details>
+          <a
+            href="https://github.com/ankushKun/animedoro-timer"
+            target="_blank"
+          >
+            <button class="button-black" type="button" onclick="">
+              <p style="font-size: 15px">GITHUB REPO</p>
             </button>
-            <button class="button-black" id="start-button" type="button" onclick="startClicked()">
-                <h2>START</h2>
+          </a>
+          <a href="https://ankushKun.github.io/">
+            <button class="button-black" type="button" onclick="">
+              <p style="font-size: 15px">ANKUSHKUN.GITHUB.IO</p>
             </button>
-            <button class="button-black" id="finish-button" type="button" onclick="finishCountdown()">
-                <h2>FINISH</h2>
-            </button>
-            <button class="button-black" id="plus5" type="button" onclick="add5mins()">
-                <h2>+5</h2>
-            </button>
-            <button class="button-black" id="pause" type="button" onclick="pauseCountdown()">
-                <i class="material-icons">pause</i>
-            </button>
-            <button class="button-black" id="play" type="button" onclick="resumeCountdown()">
-                <i class="material-icons">play_arrow</i>
-            </button>
-
-
-        </main>
-
+          </a>
+        </nav>
+      </header>
+      <br />
+      <main>
+        <div class="counter">
+          ‍‍
+          <span class="before-start">
+            Work Minutes :
+            <input
+              type="number"
+              id="work-input"
+              class="before-start"
+              onchange="inpchk(workInp)"
+              oninput="inpvalid(workInp)"
+            /><br />
+            Anime Minutes :
+            <input
+              type="number"
+              id="anime-input"
+              class="before-start"
+              onchange="inpchk(aniInp)"
+              oninput="inpvalid(aniInp)"
+            />
+          </span>
+          <span class="aft-start">
+            <span class="minutes">40</span>
+            :‍‍‍‍‍
+            <span class="seconds">00</span>
+          </span>
+        </div>
+        <br />
+        <h3 class="next-event-info">...</h3>
+        <br />
+        <h3 class="study-session-counter">0 Study sessions</h3>
+        <h3 class="anime-session-counter">0 Anime sessions</h3>
+        <br />
+        <br />
+        <h4 class="total-count-study">0 Hours of Study</h4>
+        <h4 class="total-count-anime">0 Hours of Anime</h4>
+        <br />
+        <button
+          class="button-black"
+          id="start-button"
+          type="button"
+          onclick="startClicked()"
+        >
+          <h2>START</h2>
+        </button>
+        <div></div>
+        <button
+          class="button-black hide-btn"
+          id="reset-button"
+          type="button"
+          onclick="reset()"
+        >
+          <h4>RESET</h4>
+        </button>
+        <button
+          class="button-black hide-btn"
+          id="finish-button"
+          type="button"
+          onclick="finishCountdown()"
+        >
+          <h2>FINISH</h2>
+        </button>
+        <button
+          class="button-black hide-btn"
+          id="plus5"
+          type="button"
+          onclick="add5mins()"
+        >
+          <h2>+5</h2>
+        </button>
+        <button
+          class="button-black hide-btn"
+          id="pause"
+          type="button"
+          onclick="pauseCountdown()"
+        >
+          <i class="material-icons">pause</i>
+        </button>
+        <button
+          class="button-black hide-btn"
+          id="play"
+          type="button"
+          onclick="resumeCountdown()"
+        >
+          <i class="material-icons">play_arrow</i>
+        </button>
+      </main>
     </center>
     <script src="./doro.js"></script>
     <script src="../sidebar.js"></script>
-</body>
-
+  </body>
 </html>
