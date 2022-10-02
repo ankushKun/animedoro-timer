@@ -27,7 +27,7 @@
 
 /* Style page content */
 main,header,footer {
-  margin-left: 200px; /* Same as the width of the sidebar */
+  margin-left: 00px; /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
@@ -42,9 +42,10 @@ main,header,footer {
   color: white;
   position: absolute;
   top: 0px;
-  right: 15px;
-  font-size: 40px;
+  right: 0px;
+  /* font-size: 40px; */
   margin-left: 50px;
+  font-weight: bold;
 }
 
 .sidenav .closebtn:hover{
@@ -52,7 +53,7 @@ main,header,footer {
 }
 
 /* The button used to open the sidebar */
-.openbtn {
+.openbtn , .closebtn{
   font-size: 20px;
   cursor: pointer;
   background-color: #101010AA;
