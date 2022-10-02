@@ -79,10 +79,26 @@ details {
   text-align: left;
   font-family: "bebas";
   letter-spacing: 0.2vw;
-  font-size: 2vh;
+  font-size: 15px;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-color:rgb(133, 133, 133);
 }
+
+details iframe {
+  /* width:14.2em */
+  width:12.6em;
+}
+
+details center{
+  font-size: 10px;
+  line-height: 15px;
+  text-align: left;
+  font-family: monospace;
+  letter-spacing: 1px;
+  -webkit-text-stroke-color:rgb(201, 196, 196);
+  font-size: .9em;
+}
+
 
 .counter {
   color: white;
