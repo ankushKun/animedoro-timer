@@ -33,3 +33,5 @@ Use Animedoro [here](https://ankushkun.github.io/animedoro-timer/Animedoro/) �
 - [ ] Browser extension?
 
 #### P.S. : You can also set anime time more than work time 😉
+
+please check [CONTRIBUTING.md](./CONTRIBUTING.md) 👈 
