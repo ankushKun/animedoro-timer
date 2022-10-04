@@ -1,0 +1,11 @@
+{
+    "name": "animedoro",
+    "version": "1.0.0",
+    "description": "Study with animedoro",
+    "manifest_version": 3,
+    "author": "Vedant Pol",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "animedoro"
+    }
+}
