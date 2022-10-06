@@ -1,0 +1,14 @@
+{
+    "name": "animedoro",
+    "version": "1.0.0",
+    "description": "Study with animedoro",
+    "manifest_version": 3,
+    "author": "Vedant Pol",
+    "icons": { "16": "Images/icons/icon16.png",
+           "48": "Images/icons/icon48.png",
+          "128": "Images/icons/icon128.png" },
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "animedoro"
+    }
+}
