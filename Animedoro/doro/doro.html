@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="../button.css">
     <link rel="stylesheet" href="./doro.css">
     <link rel="stylesheet" href="../sidebar.css">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7FLR9LSTH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-J7FLR9LSTH');
+    </script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <audio id="notificationSound">
         <source src="./tone.mp3" type="audio/mpeg">
@@ -96,8 +105,10 @@
         <main>
             <div class="counter">‍‍
                 <span class="before-start">
-                    Work Minutes : <input type="number" id="work-input" class="before-start" onchange="inpchk(workInp)"  oninput="inpvalid(workInp)"><br>
-                    Anime Minutes : <input type="number" id="anime-input" class="before-start" onchange="inpchk(aniInp)"  oninput="inpvalid(aniInp)">
+                    Work Minutes : <input type="number" id="work-input" class="before-start" onchange="inpchk(workInp)"
+                        oninput="inpvalid(workInp)"><br>
+                    Anime Minutes : <input type="number" id="anime-input" class="before-start" onchange="inpchk(aniInp)"
+                        oninput="inpvalid(aniInp)">
                 </span>
                 <span class="aft-start">
                     <span class="minutes">40</span>
