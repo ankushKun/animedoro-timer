@@ -68,3 +68,45 @@ main,header,footer {
 .sidenav details{
   padding: 10px;
 }
+
+.site-footer {
+  text-align: center;
+  padding: 12px 10px 20px;
+  font-family: 'bebas', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.45;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  opacity: 1;
+  color: rgb(116, 221, 213);
+}
+
+.sidenav .sidenav-credit {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'bebas', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.5;
+  margin: 0;
+}
+
+.sidenav .sidenav-credit a {
+  color: white;
+  text-decoration: none;
+}
+
+.sidenav .sidenav-credit a:hover {
+  opacity: 1;
+  color: rgb(116, 221, 213);
+}

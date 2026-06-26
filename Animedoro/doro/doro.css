@@ -176,3 +176,46 @@ input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
+.construct-promo {
+  margin: 24px auto 12px;
+  max-width: 80%;
+  padding: 16px 20px;
+  background-color: #101010aa;
+  border-radius: 10px;
+  font-family: "bebas";
+  letter-spacing: 2px;
+  color: white;
+}
+
+.construct-promo-label {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.construct-promo-tagline {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.construct-promo-tagline a {
+  color: white;
+  text-decoration: underline;
+}
+
+.construct-promo-tagline a:hover {
+  color: rgb(116, 221, 213);
+}
+
+.construct-promo-cta {
+  display: inline-block;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+.construct-promo-cta:hover {
+  color: rgb(116, 221, 213);
+  text-decoration: underline;
+}
