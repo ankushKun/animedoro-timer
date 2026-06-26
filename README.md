@@ -34,4 +34,10 @@ Use Animedoro [here](https://ankushkun.github.io/animedoro-timer/Animedoro/) �
 
 #### P.S. : You can also set anime time more than work time 😉
 
+## More from the developers
+
+[Construct](https://construct.computer) — the fastest way to set up AI agents in your business.
+
+---
+
 please check [CONTRIBUTING.md](./CONTRIBUTING.md) 👈 
