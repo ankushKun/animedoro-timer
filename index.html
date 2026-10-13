@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Animedoro Timer (40/20): Free Anime Pomodoro Timer</title>
+    <meta name="description" content="Free online Animedoro timer: study for 40 to 60 minutes, then watch one anime episode as a 20 minute break. Presets, custom times, notifications, anime wallpapers, session stats, no sign-up.">
+    <link rel="canonical" href="https://ankush.one/animedoro-timer/">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    <meta name="author" content="Ankush Singh">
+    <meta name="theme-color" content="#06070b">
+    <link rel="icon" href="./assets/img/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="./assets/img/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="./assets/img/apple-touch-icon.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Animedoro Timer">
+    <meta property="og:title" content="Animedoro Timer (40/20): Free Anime Pomodoro Timer">
+    <meta property="og:description" content="Free online Animedoro timer: study for 40 to 60 minutes, then watch one anime episode as a 20 minute break. Presets, custom times, notifications, anime wallpapers, session stats, no sign-up.">
+    <meta property="og:url" content="https://ankush.one/animedoro-timer/">
+    <meta property="og:image" content="https://ankush.one/animedoro-timer/assets/img/og.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Animedoro Timer: study for 40 minutes, then watch one anime episode. A frosted glass timer card showing 40:00 with Doro the cat peeking over it.">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@ankushKun_">
+    <meta name="twitter:title" content="Animedoro Timer (40/20): Free Anime Pomodoro Timer">
+    <meta name="twitter:description" content="Free online Animedoro timer: study for 40 to 60 minutes, then watch one anime episode as a 20 minute break. Presets, custom times, notifications, anime wallpapers, session stats, no sign-up.">
+    <meta name="twitter:image" content="https://ankush.one/animedoro-timer/assets/img/og.jpg">
+    <meta name="twitter:image:alt" content="Animedoro Timer: study for 40 minutes, then watch one anime episode. A frosted glass timer card showing 40:00 with Doro the cat peeking over it.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="./assets/fonts/Manga.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800;900&display=swap">
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <script>(function(){try{var d=document.documentElement,n=localStorage.getItem("ad.wallpaper")||"still";if(!/^[\w\/-]+$/.test(n))n="still";if(n==="still"||n.indexOf("stills/")===0)d.className+=" wp-still";if(n!=="still")d.style.setProperty("--wp","url("+new URL("./assets/wallpapers/"+n+".jpg",location.href).href+")");var q=JSON.parse(localStorage.getItem("ad.wp.lq")||"null");if(q&&q.name===n&&/^data:image\/jpeg;base64,[\w+\/=]+$/.test(q.data))d.style.setProperty("--lq","url("+q.data+")")}catch(e){}})()</script>
+    <script type="application/ld+json">{
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://ankush.one/animedoro-timer/#app",
+          "name": "Animedoro Timer",
+          "alternateName": [
+            "AnimeDoro Timer",
+            "Anime Pomodoro Timer"
+          ],
+          "url": "https://ankush.one/animedoro-timer/",
+          "description": "Free online Animedoro timer: study for 40 to 60 minutes, then watch one anime episode as a 20 minute break. Presets, custom durations, browser notifications, anime wallpapers, and session stats saved on your device.",
+          "applicationCategory": "ProductivityApplication",
+          "operatingSystem": "Any (web browser)",
+          "browserRequirements": "Requires JavaScript",
+          "isAccessibleForFree": true,
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "inLanguage": "en",
+          "dateCreated": "2021-01-30",
+          "dateModified": "2026-10-13",
+          "image": "https://ankush.one/animedoro-timer/assets/img/og.jpg",
+          "screenshot": "https://ankush.one/animedoro-timer/assets/img/screenshot.jpg",
+          "softwareHelp": "https://github.com/ankushKun/animedoro-timer",
+          "license": "https://github.com/ankushKun/animedoro-timer/blob/main/LICENSE",
+          "author": {
+            "@id": "https://ankush.one/#person"
+          },
+          "creator": {
+            "@id": "https://ankush.one/#person"
+          },
+          "featureList": [
+            "40/20, 50/20, 60/20 and 52/17 presets, or custom work and anime minutes",
+            "Browser notification and chime when a block ends",
+            "Countdown in the tab title, progress ring, add five minutes, skip, pause",
+            "45 anime wallpapers, lofi playlists, full-screen focus mode",
+            "Survives a page reload mid-session, keeps the phone screen awake",
+            "Rounds, study hours and streak counted on your device",
+            "No account, no sign-up, works offline once loaded"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://ankush.one/#person",
+          "name": "Ankush Singh",
+          "alternateName": [
+            "Ankush Kun",
+            "ankushKun"
+          ],
+          "url": "https://ankush.one/",
+          "sameAs": [
+            "https://github.com/ankushKun",
+            "https://x.com/ankushKun_",
+            "https://linkedin.com/in/ankushkun",
+            "https://youtube.com/@ankushkun"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the Animedoro technique?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Animedoro is a study method where you work for 40 to 60 minutes, then watch one anime episode, about 20 minutes, as your break, and repeat. It is a longer-block variant of the Pomodoro technique, named by medical student Josh Chen in a January 2021 YouTube video."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Animedoro vs Pomodoro: what is the difference?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Pomodoro is 25 minutes of work and a 5 minute break, with a longer break every four rounds. Animedoro is 40 to 60 minutes of work followed by a 20 minute break, and the break has a fixed shape: one episode. The longer work block suits deep tasks, and the episode makes the break something you look forward to instead of something you drift through."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why 40 and 20 instead of 25 and 5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Twenty minutes is the length of a typical anime episode without the opening and ending, so the break ends on its own. Forty to sixty minutes is long enough to get into a hard problem; many people find 25 minutes ends just as they are getting going. Josh Chen describes it as an extended 52/17 variant."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long is an Animedoro session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "One round is roughly an hour: 40 to 60 minutes of work plus one 20 minute episode. Three to four rounds make a solid study session. There is no mandatory long break; the episode is the break."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does Animedoro actually work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It works when the reward is strong enough to get you to sit down and the stop rule holds: one episode, then back to work. The evidence is anecdotal, including Josh Chen's own 600 study hours in four months. The timer helps with the stop rule by notifying you when the episode time is up."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Animedoro good for ADHD?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Some people with ADHD prefer it to Pomodoro because a 25 minute block can end before focus has kicked in, and a concrete, time-boxed reward is easier to commit to than a vague five minute break. The risk is the second episode, so set the anime minutes to one episode and let the timer stop you."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I use the Animedoro timer with shows that are not anime?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Josh Chen originally used sitcoms. Any show with 20 to 25 minute episodes works, and you can set the anime minutes to whatever your episode length is."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there an Animedoro app?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This timer works on any phone or computer in the browser and can be added to your home screen like an app. It is free, open source on GitHub, needs no account, and keeps your session counts in your browser's local storage. It has been online since January 2021."
+              }
+            }
+          ]
+        }
+      ]
+    }</script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J7FLR9LSTH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-J7FLR9LSTH');
+    </script>
+    <!-- adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3788610015085633" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wallpaper" data-wallpaper data-loops="20-anime-girl-umbrella-milky-way 21-anime-girl-with-moon-and-stars 22-anime-girl-headphones-drinking-coffee 23-anime-girl-drinking-while-its-raining-outside 24-anime-girl-falling-asleep-beside-the-window 25-anime-girl-and-cat 26-anime-school-girl-blue-sky 27-anime-school-girl-sakura 28-anime-school-girl-under-the-starry-night-sky-wit 29-anime-school-girl-watching-the-sky-at-the-train 30-arona-sleeping-blue-archieve 31-frieren-lying-down-in-field 32-frieren-x-fern-morning-coffee 33-lofi-girl-doing-homework 34-lofi-girl-watching-sunset 35-kawaii-cute-anime-girl-neko-hoodie 36-cute-anime-cat-girl 37-cute-anime-girl-and-daisies 38-neko-girl-lying-down-reading-a-book 39-miku-cherry-blossoms 40-miku-lakeside-stars 41-hu-tao-sunshine-smile-genshin-impact 42-kazekura-moe-in-the-park-blue-archive 43-relaxing-anime-school-girl-on-a-porch 44-sakurakouji-luna-raindrops-coffee-tsuki-ni-yoris" data-stills="stills/s01-anime-girl-sakura-spring stills/s02-anime-girls-kimono-sakura stills/s03-cute-anime-fox-girl-in-kimono stills/s04-frieren-amidst-water-lilies-beyond-journeys stills/s05-little-witch-and-black-cat stills/s06-miku-wisteria-flower stills/s07-anime-girl-moonlight-balcony stills/s08-anime-girl-sakura-road stills/s09-chisa-reading-wuthering-waves stills/s10-changli-reading-wuthering-waves stills/s11-diana-cavendish-reading-book-little-witch-ac stills/s12-anime-girl-sakura-boat stills/s13-fox-anime-girl-shooting-stars stills/s14-anime-girl-milky-way-stars stills/s15-cat-and-girl-in-autumn stills/s16-yae-miko-reading-book-genshin-impact stills/s17-anime-girl-looking-at-sunset-sakura-torii-ga stills/s18-anime-cat-girl-with-a-lovely-smile-cherry-bl stills/s19-mahiru-shiina-the-angel-next-door-spoils-me stills/s20-starry-night-with-himmel-and-frieren" aria-hidden="true">
+        <div class="wallpaper-layer" data-layer="a"></div>
+        <div class="wallpaper-layer" data-layer="b"></div>
+    </div>
+    <div class="petals" data-petals aria-hidden="true"></div>
+
+    <div class="page">
+    <header class="topbar">
+        <h1 class="brand-h"><a class="brand" href="./"><span class="wordmark">AnimeDoro</span><span class="vh"> Timer</span></a></h1>
+        <nav class="actions" aria-label="Quick actions">
+            <button class="icon-btn glass-lite" type="button" data-sheet-open="scenes" aria-label="Scenes, change the wallpaper (W)" title="Scenes (W)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="4"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg></button>
+            <button class="icon-btn glass-lite" type="button" data-sheet-open="settings" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"></path></svg></button>
+            <button class="icon-btn glass-lite" type="button" data-fullscreen aria-label="Full screen (F)" title="Full screen (F)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg></button>
+            <button class="icon-btn glass-lite" type="button" data-sheet-open="more" aria-label="Menu" title="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+        </nav>
+    </header>
+
+    <main>
+    <section class="hero" aria-label="Animedoro timer">
+        <p class="greeting glass-lite"><span class="sun" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span><span data-greeting>Animedoro timer: one round of work, then one episode.</span></p>
+
+        <section class="ad-timer glass" data-animedoro aria-label="Timer">
+            <svg class="cat" data-cat viewBox="0 0 120 84" role="img" aria-label="Doro the cat">
+                <g class="tail"><path d="M97 80 C 105 72, 107 61, 103 53 C 100 47, 104 41, 109.5 44" fill="none" stroke="#141626" stroke-width="10" stroke-linecap="round"></path><path d="M97 80 C 105 72, 107 61, 103 53 C 100 47, 104 41, 109.5 44" fill="none" stroke="#fffafc" stroke-width="5" stroke-linecap="round"></path></g>
+                <g class="head">
+                    <g class="ear l"><path d="M29 46 L31 17 Q32 11 37.5 14.5 L50 30 Z" fill="#fffafc" stroke="#141626" stroke-width="3" stroke-linejoin="round"></path><path d="M35 37 L35.8 23 Q36.4 20.4 38.8 22.2 L45 29.5 Z" fill="#ffa8cc"></path></g>
+                    <g class="ear r"><path d="M91 46 L89 17 Q88 11 82.5 14.5 L70 30 Z" fill="#fffafc" stroke="#141626" stroke-width="3" stroke-linejoin="round"></path><path d="M85 37 L84.2 23 Q83.6 20.4 81.2 22.2 L75 29.5 Z" fill="#ffa8cc"></path></g>
+                    <path d="M60 28 C 80 28, 92 38, 92 54 C 92 68, 82 75, 60 75 C 38 75, 28 68, 28 54 C 28 38, 40 28, 60 28 Z" fill="#fffafc" stroke="#141626" stroke-width="3"></path>
+                    <ellipse cx="38.5" cy="60" rx="5" ry="3" fill="#ffa8cc" opacity=".75"></ellipse><ellipse cx="81.5" cy="60" rx="5" ry="3" fill="#ffa8cc" opacity=".75"></ellipse>
+                    <g class="eye l"><g class="pupil"><ellipse cx="47" cy="52" rx="4.3" ry="5.7" fill="#141626"></ellipse><circle cx="48.6" cy="49.6" r="1.8" fill="#fff"></circle><circle cx="45.6" cy="54.8" r=".85" fill="#fff"></circle></g></g>
+                    <g class="eye r"><g class="pupil"><ellipse cx="73" cy="52" rx="4.3" ry="5.7" fill="#141626"></ellipse><circle cx="74.6" cy="49.6" r="1.8" fill="#fff"></circle><circle cx="71.6" cy="54.8" r=".85" fill="#fff"></circle></g></g>
+                    <path class="sleepy" d="M42.5 52.5 q4.5 4 9 0 M68.5 52.5 q4.5 4 9 0" fill="none" stroke="#141626" stroke-width="2.6" stroke-linecap="round"></path>
+                    <path d="M58.4 56.6 h3.2 l-1.6 1.9 z" fill="#ffa8cc" stroke="#ffa8cc" stroke-width="1.6" stroke-linejoin="round"></path>
+                    <path class="mouth" d="M56 60 q2 2.4 4 0 q2 2.4 4 0" fill="none" stroke="#141626" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <g class="pin" transform="translate(83.5 32) rotate(12)" fill="#ffa8cc" stroke="#141626" stroke-width="1.3" stroke-linejoin="round"><path transform="rotate(0)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(72)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(144)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(216)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(288)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><circle r="1.7" fill="#ffe08a"></circle></g>
+                </g>
+                <g class="paws" fill="#fffafc" stroke="#141626" stroke-width="3"><ellipse cx="45" cy="76" rx="9.5" ry="6.5"></ellipse><ellipse cx="75" cy="76" rx="9.5" ry="6.5"></ellipse><path d="M42 79.5 v2.6 M48 79.5 v2.6 M72 79.5 v2.6 M78 79.5 v2.6" fill="none" stroke-width="1.6" stroke-linecap="round"></path></g>
+                <g class="zz" fill="#fff" stroke="#141626" stroke-width="2.4" paint-order="stroke" stroke-linejoin="round" font-family="Fredoka, sans-serif" font-weight="700"><text x="97" y="24" font-size="14">z</text><text x="107" y="13" font-size="10">z</text></g>
+            </svg>
+
+            <div class="seg glass-lite" role="group" aria-label="Which block">
+                <span class="thumb" aria-hidden="true"></span>
+                <button type="button" data-phase-pick="work" aria-pressed="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12v16H6a2 2 0 0 0-2 2z"></path><path d="M6 17h12"></path></svg>Work</button>
+                <button type="button" data-phase-pick="anime" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="12" rx="3"></rect><path d="M10 10l4 2-4 2z"></path></svg>Anime</button>
+            </div>
+
+            <div class="ad-dial">
+                <svg viewBox="0 0 200 200" aria-hidden="true">
+                    <circle class="ad-ring-track" cx="100" cy="100" r="92"></circle>
+                    <circle class="ad-ring" data-ring cx="100" cy="100" r="92"></circle>
+                    <circle class="ad-comet" data-comet cx="100" cy="100" r="92"></circle>
+                </svg>
+                <div class="ad-dial-inner">
+                    <div class="ad-time" data-time role="timer" aria-live="off">40:00</div>
+                    <div class="ad-phase"><span data-phase>work block</span><span data-next-wrap hidden> · <span data-next></span></span></div>
+                </div>
+            </div>
+
+            <div class="ad-sub" data-sub aria-live="polite"></div>
+            <div class="ad-presets" data-presets role="group" aria-label="Work and anime minutes"></div>
+            <div class="ad-custom" data-custom hidden>
+                <label class="glass-lite">Work <input type="number" min="1" max="180" inputmode="numeric" data-work aria-label="Work minutes"> min</label>
+                <label class="glass-lite">Anime <input type="number" min="1" max="180" inputmode="numeric" data-anime aria-label="Anime minutes"> min</label>
+            </div>
+
+            <div class="ad-controls">
+                <button type="button" class="ghost glass-lite" data-act="plus5" hidden aria-label="Add five minutes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg><span class="txt">5 min</span></button>
+                <button type="button" class="primary" data-act="start"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"></path></svg><span data-label>Start</span></button>
+                <button type="button" class="primary" data-act="pause" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1.5"></rect><rect x="14" y="5" width="4" height="14" rx="1.5"></rect></svg><span data-label>Pause</span></button>
+                <button type="button" class="primary" data-act="resume" hidden><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"></path></svg><span data-label>Resume</span></button>
+                <button type="button" class="ghost glass-lite" data-act="skip" hidden aria-label="Skip this block"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 5.5v13a1 1 0 0 0 1.5.86l9-5.5a1 1 0 0 0 0-1.72l-9-5.5A1 1 0 0 0 5 5.5z"></path><rect x="17" y="5" width="3" height="14" rx="1.5"></rect></svg><span class="txt">Skip</span></button>
+                <button type="button" class="ghost glass-lite icon" data-act="reset" hidden aria-label="Reset the round" title="Reset (R)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7"></path><path d="M3 4v5h5"></path></svg></button>
+            </div>
+
+            <div class="ad-foot">
+                <div class="rounds"><span class="dots" data-rounds aria-hidden="true"></span><span data-today>No rounds yet today</span></div>
+                <div class="keys"><span class="kbd">Space</span><span>start</span><span class="kbd">S</span><span>skip</span><span class="kbd">W</span><span>scene</span></div>
+            </div>
+        </section>
+
+        <div class="corner left">
+            <a class="projects glass" data-projects href="https://ankush.one/" target="_blank" rel="noopener">
+                <img data-projects-img src="./assets/img/icon.png" alt="" width="44" height="44">
+                <span class="t"><b data-projects-title>More things I built</b><span class="s" data-projects-summary>Projects and posts on ankush.one</span></span>
+                <span class="arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
+            </a>
+        </div>
+        <div class="corner right">
+            <a class="home-link" href="./timer/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"></circle><path d="M12 9v4l2.5 2M9 2h6"></path></svg>Focus mode</a>
+        </div>
+        <a class="scroll-hint glass-lite" href="#what-is-animedoro">What is Animedoro?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"></path></svg></a>
+    </section>
+
+    <div class="content">
+        <section class="section glass two" id="what-is-animedoro">
+            <div>
+                <h2>What is Animedoro?</h2>
+                <p class="lead">Work for 40 to 60 minutes, then watch one anime episode (about 20 minutes) as your break. Repeat.</p>
+                <p>It is the longer-block cousin of the Pomodoro technique. Instead of 25 minutes on and 5 off, you get a real stretch of deep work and a break that ends on its own when the episode does. The name comes from <a href="https://www.youtube.com/watch?v=bUjGZJIgse0" target="_blank" rel="noopener">a January 2021 video by Josh Chen</a>, a medical student who used it to log around 600 hours of study and 300 hours of anime in four months. He calls it an extended 52/17 variant, and he originally ran it with sitcoms. The <a href="https://ankush.one/blogs/animedoro-technique/">full Animedoro guide</a> on my blog goes deeper into the origin, the ratio and how to stop at one episode.</p>
+            </div>
+            <div class="video" data-yt="bUjGZJIgse0">
+                <button type="button" class="yt-facade" data-yt-play aria-label="Play the video: Josh Chen explains the Animedoro technique">
+                    <picture><source srcset="./assets/img/josh-chen-animedoro.webp" type="image/webp"><img src="./assets/img/josh-chen-animedoro.jpg" alt="" loading="lazy" width="1280" height="720"></picture>
+                    <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"></path></svg></span>
+                    <span class="yt-label" aria-hidden="true">Josh Chen explains it, 9 min</span>
+                </button>
+                <a class="yt-ext" href="https://www.youtube.com/watch?v=bUjGZJIgse0" target="_blank" rel="noopener">Watch on YouTube</a>
+            </div>
+        </section>
+
+        <section class="section glass" id="how-it-works">
+            <h2>How the timer works</h2>
+            <div class="steps">
+                <div class="step glass-lite"><span class="num" aria-hidden="true">1</span><strong>Pick a preset</strong><span><b>40/20</b>, 50/20, 60/20 or 52/17, or type your own work and anime minutes. Your choice is remembered on this device.</span></div>
+                <div class="step glass-lite"><span class="num" aria-hidden="true">2</span><strong>Press Start</strong><span>The ring and the tab title count down your work block, so you can switch tabs and still see the time.</span></div>
+                <div class="step glass-lite"><span class="num" aria-hidden="true">3</span><strong>Go watch one episode</strong><span>A chime and a browser notification when the block ends. Doro the cat takes a nap while you watch.</span></div>
+                <div class="step glass-lite"><span class="num" aria-hidden="true">4</span><strong>Back to work</strong><span>It pings you again when the episode time is up. Turn on <b>auto-start</b> and the next block begins by itself.</span></div>
+                <div class="step glass-lite"><span class="num" aria-hidden="true">5</span><strong>Deep in it? +5. Done early? Skip.</strong><span>The timer survives a page reload, keeps your phone screen awake, and counts rounds, hours and your streak locally. Nothing leaves your browser.</span></div>
+                <div class="step glass-lite"><span class="num" aria-hidden="true">6</span><strong>Make it yours</strong><span>45 anime scenes, lofi playlists, and a full-screen <a href="./timer/">focus mode</a>. Press <b>W</b> to shuffle the scene.</span></div>
+            </div>
+        </section>
+
+        <section class="section glass" id="animedoro-vs-pomodoro">
+            <h2>Animedoro vs Pomodoro</h2>
+            <div class="table-wrap">
+                <table class="table">
+                    <thead><tr><th></th><th>Pomodoro</th><th>Animedoro</th></tr></thead>
+                    <tbody>
+                        <tr><td>Work block</td><td>25 min</td><td>40 to 60 min</td></tr>
+                        <tr><td>Break</td><td>5 min, 15 to 30 min every 4th round</td><td>One episode, about 20 min</td></tr>
+                        <tr><td>Work to break ratio</td><td>5:1</td><td>2:1 to 3:1</td></tr>
+                        <tr><td>Break has a natural end</td><td>No</td><td>Yes, the episode ends</td></tr>
+                        <tr><td>Best for</td><td>Short tasks, getting started</td><td>Deep work, long study days</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p>Pomodoro's short blocks are great for getting started on something you are avoiding. Animedoro's longer blocks suit problem sets, reading and coding, where 25 minutes ends just as you get into it. Pick the work length that matches how long you can actually hold focus, and keep the break at one episode.</p>
+        </section>
+
+        <section class="section glass" id="tips">
+            <h2>One episode, not four</h2>
+            <ul class="tips">
+                <li><span><strong>One episode, then stop.</strong> Set the anime minutes to the real episode length and let the notification pull you back.</span></li>
+                <li><span><strong>Skip the opening and ending.</strong> That is how a 24 minute episode fits a 20 minute break.</span></li>
+                <li><span><strong>Pick a show you have already seen, or a slow one.</strong> Cliffhanger shows are how the second episode happens.</span></li>
+                <li><span><strong>Not an anime person?</strong> Any 20 minute sitcom works. Josh Chen started with sitcoms.</span></li>
+                <li><span><strong>ADHD note.</strong> Some people find the longer block easier than Pomodoro because focus has time to kick in, and a concrete reward is easier to commit to. The stop rule matters even more here.</span></li>
+            </ul>
+        </section>
+
+        <section class="section glass faq" id="faq">
+            <h2>Animedoro FAQ</h2>
+            <details open>
+                <summary>What is the Animedoro technique?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>Animedoro is a study method where you work for 40 to 60 minutes, then watch one anime episode, about 20 minutes, as your break, and repeat. It is a longer-block variant of the Pomodoro technique, named by medical student Josh Chen in a January 2021 YouTube video.</p>
+            </details>
+            <details>
+                <summary>Animedoro vs Pomodoro: what is the difference?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>Pomodoro is 25 minutes of work and a 5 minute break, with a longer break every four rounds. Animedoro is 40 to 60 minutes of work followed by a 20 minute break, and the break has a fixed shape: one episode. The longer work block suits deep tasks, and the episode makes the break something you look forward to instead of something you drift through.</p>
+            </details>
+            <details>
+                <summary>Why 40 and 20 instead of 25 and 5?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>Twenty minutes is the length of a typical anime episode without the opening and ending, so the break ends on its own. Forty to sixty minutes is long enough to get into a hard problem; many people find 25 minutes ends just as they are getting going. Josh Chen describes it as an extended 52/17 variant.</p>
+            </details>
+            <details>
+                <summary>How long is an Animedoro session?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>One round is roughly an hour: 40 to 60 minutes of work plus one 20 minute episode. Three to four rounds make a solid study session. There is no mandatory long break; the episode is the break.</p>
+            </details>
+            <details>
+                <summary>Does Animedoro actually work?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>It works when the reward is strong enough to get you to sit down and the stop rule holds: one episode, then back to work. The evidence is anecdotal, including Josh Chen's own 600 study hours in four months. The timer helps with the stop rule by notifying you when the episode time is up.</p>
+            </details>
+            <details>
+                <summary>Is Animedoro good for ADHD?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>Some people with ADHD prefer it to Pomodoro because a 25 minute block can end before focus has kicked in, and a concrete, time-boxed reward is easier to commit to than a vague five minute break. The risk is the second episode, so set the anime minutes to one episode and let the timer stop you.</p>
+            </details>
+            <details>
+                <summary>Can I use the Animedoro timer with shows that are not anime?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>Yes. Josh Chen originally used sitcoms. Any show with 20 to 25 minute episodes works, and you can set the anime minutes to whatever your episode length is.</p>
+            </details>
+            <details>
+                <summary>Is there an Animedoro app?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+                <p>This timer works on any phone or computer in the browser and can be added to your home screen like an app. It is free, open source on GitHub, needs no account, and keeps your session counts in your browser's local storage. It has been online since January 2021.</p>
+            </details>
+        </section>
+
+        <section class="langs glass" id="other-languages" aria-label="Animedoro in other languages">
+            <p lang="pt-BR"><strong>Português:</strong> Animedoro é uma técnica de estudo: 40 a 60 minutos de foco e depois um episódio de anime (cerca de 20 minutos) como pausa. Este cronômetro animedoro é gratuito e funciona no navegador.</p>
+            <p lang="es"><strong>Español:</strong> Animedoro es una técnica de estudio: 40 a 60 minutos de trabajo y luego un episodio de anime (unos 20 minutos) de descanso. Este temporizador animedoro es gratuito y funciona en el navegador.</p>
+            <p lang="it"><strong>Italiano:</strong> Animedoro è una tecnica di studio: 40-60 minuti di lavoro e poi un episodio di anime (circa 20 minuti) di pausa. Questo timer animedoro è gratuito e funziona nel browser.</p>
+            <p lang="ar" dir="rtl"><strong>العربية:</strong> بومودورو الأنمي (أنيميدورو) طريقة للدراسة: من 40 إلى 60 دقيقة من التركيز ثم حلقة أنمي واحدة (حوالي 20 دقيقة) كاستراحة. هذا المؤقت مجاني ويعمل في المتصفح.</p>
+        </section>
+
+        <p style="text-align:center;margin:0"><a class="primary" href="./timer/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"></path></svg>Open focus mode</a></p>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <span>Built in 2021 by <a href="https://ankush.one/">Ankush Singh</a>. Free, open source, no account. <a href="https://github.com/ankushKun/animedoro-timer" target="_blank" rel="noopener">Source on GitHub</a>.</span>
+        <span>More from the developer: <a href="https://construct.computer" target="_blank" rel="noopener noreferrer">Construct</a>, the fastest way to set up AI agents in your business.</span>
+    </footer>
+    </div>
+
+    <div class="sheet-backdrop" data-sheet-close></div>
+    <aside class="sheet" data-sheet aria-label="Scenes, music, settings and more" aria-hidden="true">
+        <div class="sheet-head">
+            <div class="tabs glass-lite" role="tablist" aria-label="Sheet sections">
+                <button class="tab" type="button" role="tab" data-tab="scenes" id="tab-scenes" aria-controls="panel-scenes" aria-selected="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="4"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg><span>Scenes</span></button>
+                <button class="tab" type="button" role="tab" data-tab="music" id="tab-music" aria-controls="panel-music" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V6l11-2v12"></path><circle cx="6" cy="18" r="3"></circle><circle cx="17" cy="16" r="3"></circle></svg><span>Music</span></button>
+                <button class="tab" type="button" role="tab" data-tab="settings" id="tab-settings" aria-controls="panel-settings" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"></path></svg><span>Settings</span></button>
+                <button class="tab" type="button" role="tab" data-tab="more" id="tab-more" aria-controls="panel-more" aria-selected="false" tabindex="-1"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><span>More</span></button>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-scenes" role="tabpanel" data-panel="scenes" aria-labelledby="tab-scenes">
+            <div class="filters" data-filters role="group" aria-label="Filter scenes"></div>
+            <div class="tiles" data-tiles></div>
+            <div class="sheet-row">
+                <button class="ghost glass-lite" type="button" data-shuffle-wallpaper><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"></path></svg>Surprise me <span class="kbd">W</span></button>
+                <span class="credit">Scenes from <a href="https://moewalls.com" target="_blank" rel="noopener">MoeWalls</a>, <a href="https://github.com/ankushKun/animedoro-timer/blob/main/assets/wallpapers/CREDITS.md" target="_blank" rel="noopener">credits</a></span>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-music" role="tabpanel" data-panel="music" aria-labelledby="tab-music" hidden>
+            <details class="playlist glass-lite" data-playlist="0aQltjGqAFjNTVNGjoELKq" open><summary>Anime lofi</summary></details>
+            <details class="playlist glass-lite" data-playlist="2hmggPfWXyCOmUtmWzKItS"><summary>Anime music</summary></details>
+            <details class="playlist glass-lite" data-playlist="7ISGo58d10WRhVgfN55d1w"><summary>Hatsune Miku</summary></details>
+            <details class="playlist glass-lite" data-playlist="3lc6yNcs0dN6Z8czsrpSZj"><summary>Retro game tunes</summary></details>
+            <p class="sheet-credit">Spotify playlists keep playing after you close this.</p>
+        </div>
+
+        <div class="panel" id="panel-settings" role="tabpanel" data-panel="settings" aria-labelledby="tab-settings" hidden>
+            <div class="row glass-lite"><div><div class="t">Chime when a block ends</div></div><button type="button" class="toggle" role="switch" data-opt="sound" aria-checked="true" aria-label="Chime when a block ends"></button></div>
+            <div class="row glass-lite"><div><div class="t">Browser notification</div><small>also when the tab is in the background</small></div><button type="button" class="toggle" role="switch" data-opt="notify" aria-checked="true" aria-label="Browser notification"></button></div>
+            <div class="row glass-lite"><div><div class="t">Auto-start the next block</div><small>no need to press start after the episode</small></div><button type="button" class="toggle" role="switch" data-opt="autostart" aria-checked="false" aria-label="Auto-start the next block"></button></div>
+            <div class="row glass-lite"><div><div class="t">Reduce effects</div><small>no scene drift, no petals, fewer animations</small></div><button type="button" class="toggle" role="switch" data-opt="lite" aria-checked="false" aria-label="Reduce effects"></button></div>
+            <div class="row glass-lite"><div><div class="t">Doro the cat</div><small>turn off for a plain card</small></div><button type="button" class="toggle" role="switch" data-opt="cat" aria-checked="true" aria-label="Doro the cat"></button></div>
+            <h3>On this device</h3>
+            <div class="stats" aria-label="Your sessions on this device">
+                <div class="stat glass-lite"><b data-stat="study-sessions">0</b><span>work blocks</span></div>
+                <div class="stat glass-lite"><b data-stat="study-time">0m</b><span>studied</span></div>
+                <div class="stat glass-lite"><b data-stat="anime-sessions">0</b><span>episodes</span></div>
+                <div class="stat glass-lite"><b data-stat="anime-time">0m</b><span>watched</span></div>
+            </div>
+            <button type="button" class="link-btn" data-reset-stats>Clear stats</button>
+        </div>
+
+        <div class="panel" id="panel-more" role="tabpanel" data-panel="more" aria-labelledby="tab-more" hidden>
+            <nav class="more-links" aria-label="Pages">
+                <a class="glass-lite" href="#how-it-works" data-sheet-close>How the timer works<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+                <a class="glass-lite" href="#faq" data-sheet-close>Animedoro FAQ<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+                <a class="glass-lite" href="./timer/">Focus mode<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></a>
+                <a class="glass-lite" href="https://github.com/ankushKun/animedoro-timer" target="_blank" rel="noopener">Source on GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+                <a class="glass-lite" href="https://ankush.one/">ankush.one<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+                <a class="glass-lite" href="https://construct.computer" target="_blank" rel="noopener noreferrer">Construct, AI agents for your business<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></a>
+            </nav>
+            <p class="sheet-credit">Made by <a href="https://ankush.one/">Ankush Singh</a> since 2021. Free, open source, no account.<br><span class="kbd">Space</span> start · <span class="kbd">S</span> skip · <span class="kbd">R</span> reset · <span class="kbd">W</span> scene · <span class="kbd">M</span> music · <span class="kbd">F</span> full screen</p>
+        </div>
+    </aside>
+
+    <div class="done" data-done aria-hidden="true">
+        <div class="done-card glass" role="dialog" aria-modal="true" aria-labelledby="done-title">
+            <div data-confetti aria-hidden="true" style="position:absolute;inset:0;pointer-events:none;overflow:visible"></div>
+            <svg class="cat" data-done-cat viewBox="0 0 120 112" role="img" aria-label="Doro the cat, cheering">
+                <path class="spark" transform="translate(12 40) scale(1)" d="M0 -6 C 0.6 -1.6, 1.6 -0.6, 6 0 C 1.6 0.6, 0.6 1.6, 0 6 C -0.6 1.6, -1.6 0.6, -6 0 C -1.6 -0.6, -0.6 -1.6, 0 -6 Z" fill="#8fd8ff" stroke="#141626" stroke-width="1.20" stroke-linejoin="round"></path><path class="spark" transform="translate(108 26) scale(0.8)" d="M0 -6 C 0.6 -1.6, 1.6 -0.6, 6 0 C 1.6 0.6, 0.6 1.6, 0 6 C -0.6 1.6, -1.6 0.6, -6 0 C -1.6 -0.6, -0.6 -1.6, 0 -6 Z" fill="#ffe08a" stroke="#141626" stroke-width="1.50" stroke-linejoin="round"></path><path class="spark" transform="translate(16 14) scale(0.55)" d="M0 -6 C 0.6 -1.6, 1.6 -0.6, 6 0 C 1.6 0.6, 0.6 1.6, 0 6 C -0.6 1.6, -1.6 0.6, -6 0 C -1.6 -0.6, -0.6 -1.6, 0 -6 Z" fill="#ffa8cc" stroke="#141626" stroke-width="2.18" stroke-linejoin="round"></path>
+                <g class="tail"><path d="M80 101 C 97 104, 106 93, 102 84 C 99 78, 103 72, 109 75" fill="none" stroke="#141626" stroke-width="10" stroke-linecap="round"></path><path d="M80 101 C 97 104, 106 93, 102 84 C 99 78, 103 72, 109 75" fill="none" stroke="#fffafc" stroke-width="5" stroke-linecap="round"></path></g>
+                <g class="arm l"><path d="M42 82 L 21 62" fill="none" stroke="#141626" stroke-width="10.5" stroke-linecap="round"></path><path d="M42 82 L 21 62" fill="none" stroke="#fffafc" stroke-width="5" stroke-linecap="round"></path></g>
+                <g class="arm r"><path d="M78 82 L 99 62" fill="none" stroke="#141626" stroke-width="10.5" stroke-linecap="round"></path><path d="M78 82 L 99 62" fill="none" stroke="#fffafc" stroke-width="5" stroke-linecap="round"></path></g>
+                <path d="M40 68 C 33 90, 40 106, 60 106 C 80 106, 87 90, 80 68 Z" fill="#fffafc" stroke="#141626" stroke-width="3"></path>
+                <g fill="#fffafc" stroke="#141626" stroke-width="3"><ellipse cx="49" cy="105.5" rx="7.5" ry="4.5"></ellipse><ellipse cx="71" cy="105.5" rx="7.5" ry="4.5"></ellipse></g>
+                <g class="head">
+                    <g class="ear l"><path d="M29 46 L31 17 Q32 11 37.5 14.5 L50 30 Z" fill="#fffafc" stroke="#141626" stroke-width="3" stroke-linejoin="round"></path><path d="M35 37 L35.8 23 Q36.4 20.4 38.8 22.2 L45 29.5 Z" fill="#ffa8cc"></path></g>
+                    <g class="ear r"><path d="M91 46 L89 17 Q88 11 82.5 14.5 L70 30 Z" fill="#fffafc" stroke="#141626" stroke-width="3" stroke-linejoin="round"></path><path d="M85 37 L84.2 23 Q83.6 20.4 81.2 22.2 L75 29.5 Z" fill="#ffa8cc"></path></g>
+                    <path d="M60 28 C 80 28, 92 38, 92 54 C 92 68, 82 75, 60 75 C 38 75, 28 68, 28 54 C 28 38, 40 28, 60 28 Z" fill="#fffafc" stroke="#141626" stroke-width="3"></path>
+                    <ellipse cx="38.5" cy="60" rx="5" ry="3" fill="#ffa8cc" opacity=".75"></ellipse><ellipse cx="81.5" cy="60" rx="5" ry="3" fill="#ffa8cc" opacity=".75"></ellipse>
+                    <path d="M42 54 q5 -6.5 10 0 M68 54 q5 -6.5 10 0" fill="none" stroke="#141626" stroke-width="2.8" stroke-linecap="round"></path>
+                    <path d="M58.4 56.6 h3.2 l-1.6 1.9 z" fill="#ffa8cc" stroke="#ffa8cc" stroke-width="1.6" stroke-linejoin="round"></path>
+                    <path d="M55 60 Q60 69 65 60 Z" fill="#141626" stroke="#141626" stroke-width="1.6" stroke-linejoin="round"></path><ellipse cx="60" cy="64.2" rx="2.5" ry="1.6" fill="#ffa8cc"></ellipse>
+                    <g class="pin" transform="translate(83.5 32) rotate(12)" fill="#ffa8cc" stroke="#141626" stroke-width="1.3" stroke-linejoin="round"><path transform="rotate(0)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(72)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(144)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(216)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><path transform="rotate(288)" d="M0 -0.6 C -2.7 -2.3, -2.9 -6.2, -0.9 -7.4 L0 -6.3 L0.9 -7.4 C 2.9 -6.2, 2.7 -2.3, 0 -0.6 Z"></path><circle r="1.7" fill="#ffe08a"></circle></g>
+                </g>
+            </svg>
+            <h2 id="done-title" data-done-title>Work block done!</h2>
+            <p data-done-text>40 minutes in the bag. Go watch one episode, Doro will keep time.</p>
+            <div class="done-stats">
+                <div class="stat glass-lite"><b data-done-rounds>0</b><span>rounds today</span></div>
+                <div class="stat glass-lite"><b data-done-studied>0m</b><span>studied today</span></div>
+                <div class="stat glass-lite"><b data-done-streak>1</b><span>day streak</span></div>
+            </div>
+            <div class="done-actions">
+                <button type="button" class="ghost glass-lite" data-done-close>Not yet</button>
+                <button type="button" class="primary sakura" data-done-start><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l11-6.5a1 1 0 0 0 0-1.72l-11-6.5A1 1 0 0 0 8 5.5z"></path></svg><span data-done-label>Start anime break</span></button>
+            </div>
+            <span class="done-note" data-done-note></span>
+        </div>
+    </div>
+    <div class="toast glass" data-toast role="status" aria-live="polite"></div>
+
+    <script src="./assets/js/whimsy.js"></script>
+    <script src="./assets/js/timer.js"></script>
+    <script src="./assets/js/wallpaper.js"></script>
+    <script src="./assets/js/sheet.js"></script>
+    <script src="./assets/js/projects.js"></script>
+</body>
+</html>
