@@ -19,7 +19,7 @@ Use Animedoro [here](https://ankush.one/animedoro-timer/) 👈 😊 (focus mode:
 
 ## Screenshots
 
-![timer](./assets/img/og.png)
+![timer](./assets/img/screenshot.jpg)
 
 <details><summary>The 2021 version</summary>
 
